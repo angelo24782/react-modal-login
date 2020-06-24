@@ -10,10 +10,14 @@ function App() {
     setOpen(true);
   };
 
+  const closeModal = () => {
+    setOpen(false);
+  };
+
   return (
     <div className="App">
       <NavBar openfn={openModal} />
-      <ModalContainer show={open} />
+      <ModalContainer show={open} close={closeModal} />
     </div>
   );
 }

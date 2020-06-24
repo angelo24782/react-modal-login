@@ -1,11 +1,13 @@
 import React from "react";
 
-export const Modal = () => {
+export const Modal = ({ close }) => {
   return (
     <div className="modal-content">
       <div className="modal-header">
         <h2>Login modal</h2>
-        <span className="closeBtn">&times;</span>
+        <span className="closeBtn" onClick={close}>
+          &times;
+        </span>
       </div>
       <div className="modal-body">
         <form>
@@ -21,7 +23,7 @@ export const Modal = () => {
             <button type="submit" className="loginBtn">
               Login
             </button>
-            <button type="submit" className="cancelBtn">
+            <button type="submit" className="cancelBtn" onClick={close}>
               Cancel
             </button>
           </div>
