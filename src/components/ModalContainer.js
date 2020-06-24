@@ -2,6 +2,7 @@ import React from "react";
 import { Modal } from "./Modal";
 
 export const ModalContainer = ({ show }) => {
+  
   const showModal = show ? "active" : "";
 
   return (
